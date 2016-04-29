@@ -2,28 +2,35 @@ package br.com.hsj.ep119.api.domain;
 
 public class User {
 
-	private Long id;
+	private Integer id;
 	
 	private String name;
 	
 	private String email;
 	
+	private String workPhone;
+	
+	private String homePhone;
+	
+	private String mobilePhone;
+	
+	
 	public User() {
 		super();
 	}
 	
-	public User(Long id, String name, String email) {
+	public User(Integer id, String name, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -41,6 +48,30 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getWorkPhone() {
+		return workPhone;
+	}
+
+	public void setWorkPhone(String workPhone) {
+		this.workPhone = workPhone;
+	}
+
+	public String getHomePhone() {
+		return homePhone;
+	}
+
+	public void setHomePhone(String homePhone) {
+		this.homePhone = homePhone;
+	}
+
+	public String getMobilePhone() {
+		return mobilePhone;
+	}
+
+	public void setMobilePhone(String mobilePhone) {
+		this.mobilePhone = mobilePhone;
 	}
 
 	@Override
