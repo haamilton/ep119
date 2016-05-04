@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user-repository>
+	<user id="1">
+	    <name>Teste</name>
+	    <email>teste@gmail.com</email>
+	    <work-phone>345334534</work-phone>
+	    <home-phone>234234234</home-phone>
+	    <mobile-phone>123123213</mobile-phone>
+	</user>
+	<user id="2">
+	    <name>Teste</name>
+	    <email>teste@gmail.com</email>
+	    <work-phone>345334534</work-phone>
+	    <home-phone>234234234</home-phone>
+	    <mobile-phone>123123213</mobile-phone>
+	</user>
+</user-repository>
