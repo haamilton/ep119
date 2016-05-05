@@ -41,5 +41,25 @@
             <bind-xml name="mobile-phone" node="element"/>
         </field>
         
+        <field name="registrationNumber" type="int">
+            <bind-xml name="registration-number" node="element"/>
+        </field>
+
+		<field name="birthday" type="date">
+            <bind-xml name="birthday" node="element"/>
+        </field>
+        
+		<field name="iniciation" type="date">
+            <bind-xml name="iniciation" node="element"/>
+        </field>
+        
+		<field name="transition" type="date">
+            <bind-xml name="transition" node="element"/>
+        </field>
+        
+        <field name="elevation" type="date">
+            <bind-xml name="elevation" node="element"/>
+        </field>
+        
     </class>
  </mapping>    

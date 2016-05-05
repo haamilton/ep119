@@ -1,5 +1,7 @@
 package br.com.hsj.ep119.api.domain;
 
+import java.util.Date;
+
 public class User {
 
 	private Integer id;
@@ -14,16 +16,34 @@ public class User {
 	
 	private String mobilePhone;
 	
+	private Integer registrationNumber;
+	
+	private Date birthday;
+	
+	private Date iniciation;
+	
+	private Date transition;
+	
+	private Date elevation;
 	
 	public User() {
 		super();
 	}
 	
-	public User(Integer id, String name, String email) {
+	public User(Integer id, String name, String email, String workPhone, String homePhone, String mobilePhone,
+			Integer registrationNumber, Date birthday, Date iniciation, Date transition, Date elevation) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
+		this.workPhone = workPhone;
+		this.homePhone = homePhone;
+		this.mobilePhone = mobilePhone;
+		this.registrationNumber = registrationNumber;
+		this.birthday = birthday;
+		this.iniciation = iniciation;
+		this.transition = transition;
+		this.elevation = elevation;
 	}
 
 	public Integer getId() {
@@ -74,6 +94,47 @@ public class User {
 		this.mobilePhone = mobilePhone;
 	}
 
+	public Integer getRegistrationNumber() {
+		return registrationNumber;
+	}
+
+	public void setRegistrationNumber(Integer registrationNumber) {
+		this.registrationNumber = registrationNumber;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	public Date getIniciation() {
+		return iniciation;
+	}
+
+	public void setIniciation(Date iniciation) {
+		this.iniciation = iniciation;
+	}
+
+	public Date getTransition() {
+		return transition;
+	}
+
+	public void setTransition(Date transition) {
+		this.transition = transition;
+	}
+
+	public Date getElevation() {
+		return elevation;
+	}
+
+	public void setElevation(Date elevation) {
+		this.elevation = elevation;
+	}
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -99,7 +160,5 @@ public class User {
 		return true;
 	}
 
-
-	
 	
 }

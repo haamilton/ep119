@@ -1,17 +1,302 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <user-repository>
 	<user id="1">
-	    <name>Teste</name>
-	    <email>teste@gmail.com</email>
-	    <work-phone>345334534</work-phone>
-	    <home-phone>234234234</home-phone>
-	    <mobile-phone>123123213</mobile-phone>
+	    <name>André Luiz Debiasio</name>
+	    <registration-number>12563</registration-number>
+	    <iniciation>01/08/2014</iniciation>
+	    <transition></transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone></home-phone>
+	    <mobile-phone>(41)8807-1635</mobile-phone>
+	    <email>aldebiasio@hotmail.com</email>
+	    <birthday>10/09</birthday>
 	</user>
+	
 	<user id="2">
-	    <name>Teste</name>
-	    <email>teste@gmail.com</email>
-	    <work-phone>345334534</work-phone>
-	    <home-phone>234234234</home-phone>
-	    <mobile-phone>123123213</mobile-phone>
+	    <name>Andrei Kuhnen da Silva</name>
+	    <registration-number>10959</registration-number>
+	    <iniciation>10/09/2010</iniciation>
+	    <transition>12/08/2011</transition>
+	    <elevation>30/03/2012</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3387-9965</home-phone>
+	    <mobile-phone>(41)9685-0845</mobile-phone>
+	    <email>andreiksilva@free.fr</email>
+	    <birthday>08/12</birthday>
 	</user>
+	
+	<user id="3">
+	    <name>Antônio de Camargo</name>
+	    <registration-number>9541</registration-number>
+	    <iniciation>08/12/2006</iniciation>
+	    <transition>29/06/2007</transition>
+	    <elevation>07/12/2007</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3056-0051</home-phone>
+	    <mobile-phone>(41)9107-1056</mobile-phone>
+	    <email>camargorepre@gmail.com</email>
+	    <birthday>04/12</birthday>
+	</user>
+	
+	<user id="4">
+	    <name>Carlos Marcondes</name>
+	    <registration-number>12482</registration-number>
+	    <iniciation>30/05/2014</iniciation>
+	    <transition>12/06/2015</transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3033-7620</home-phone>
+	    <mobile-phone>(41)9116-6780</mobile-phone>
+	    <email>advmarcondes@pop.com.br</email>
+	    <birthday>13/03</birthday>
+	</user>
+
+	<user id="5">
+	    <name>Claudir Mariano</name>
+	    <registration-number>10105</registration-number>
+	    <iniciation>25/07/2008</iniciation>
+	    <transition>24/04/2009</transition>
+	    <elevation>27/11/2009</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3665-7773</home-phone>
+	    <mobile-phone>(41)9135-4356</mobile-phone>
+	    <email>claudirmariano.adv@uol.com.br</email>
+	    <birthday>25/08</birthday>
+	</user>
+								
+	<user id="6">
+	    <name>David Lachowski</name>
+	    <registration-number>10585</registration-number>
+	    <iniciation>02/10/2009</iniciation>
+	    <transition>11/06/2010</transition>
+	    <elevation>13/05/2011</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3033-6693</home-phone>
+	    <mobile-phone>(41)8804-9810</mobile-phone>
+	    <email>arquitetodavid@uol.com.br</email>
+	    <birthday>31/10</birthday>
+	</user>
+	
+	<user id="7">
+	    <name>Eduardo de Freitas Ferro</name>
+	    <registration-number>12396</registration-number>
+	    <iniciation>22/11/2013</iniciation>
+	    <transition>08/08/2014</transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3077-0800</home-phone>
+	    <mobile-phone>(41)9684-7970</mobile-phone>
+	    <email>duferro@gmail.com</email>
+	    <birthday>17/09</birthday>
+	</user>
+	
+	<user id="8">
+	    <name>Felipe José Debiasio</name>
+	    <registration-number>11674</registration-number>
+	    <iniciation>25/05/2012</iniciation>
+	    <transition>22/02/2013</transition>
+	    <elevation>18/10/2013</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3665-6291</home-phone>
+	    <mobile-phone>(41)9914-3881</mobile-phone>
+	    <email>felipedebiasio@gmail.com</email>
+	    <birthday>27/02</birthday>
+	</user>						
+								
+	<user id="9">
+	    <name>Fernando Trindade Galvão de França</name>
+	    <registration-number>12939</registration-number>
+	    <iniciation>19/06/2015</iniciation>
+	    <transition></transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3024-6545</home-phone>
+	    <mobile-phone>(41)9941-7799</mobile-phone>
+	    <email>nandogalvao@gmail.com</email>
+	    <birthday>25/01</birthday>
+	</user>								
+
+	<user id="10">
+	    <name>Hamilton dos Santos Junior</name>
+	    <registration-number>12428</registration-number>
+	    <iniciation>28/03/2014</iniciation>
+	    <transition>14/11/2014</transition>
+	    <elevation>13/11/2015</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3537-0037</home-phone>
+	    <mobile-phone>(41)9104-9668</mobile-phone>
+	    <email>haamilton@gmail.com</email>
+	    <birthday>19/02</birthday>
+	</user>								 	
+
+	<user id="11">
+	    <name>João Ari Chiquito</name>
+	    <registration-number>8517</registration-number>
+	    <iniciation>05/12/2003</iniciation>
+	    <transition>02/07/2004</transition>
+	    <elevation>03/12/2004</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3636-9183</home-phone>
+	    <mobile-phone>(41)9115-2924</mobile-phone>
+	    <email>jachiquito@uol.com.br</email>
+	    <birthday>14/02</birthday>
+	</user>											
+
+	<user id="12">
+	    <name>João Cesario Mota</name>
+	    <registration-number>13140</registration-number>
+	    <iniciation>23/10/2015</iniciation>
+	    <transition></transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3667-5256</home-phone>
+	    <mobile-phone>(41)9104-5415</mobile-phone>
+	    <email>cesario.mota@yahoo.com.br</email>
+	    <birthday>11/02</birthday>
+	</user>
+								
+	<user id="13">
+	    <name>Juarez Falcato Vecina</name>
+	    <registration-number>11508</registration-number>
+	    <iniciation>04/11/2011</iniciation>
+	    <transition>27/07/2012</transition>
+	    <elevation>15/03/2013</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3779-3177</home-phone>
+	    <mobile-phone>(41)9611-9954</mobile-phone>
+	    <email>juameioambiente@gmail.com</email>
+	    <birthday>14/11</birthday>
+	</user>							
+								
+	<user id="14">
+	    <name>Juliano Pietrobelli da Silva</name>
+	    <registration-number>13043</registration-number>
+	    <iniciation>04/09/2015</iniciation>
+	    <transition></transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3668-9167</home-phone>
+	    <mobile-phone>(41)9650-8723</mobile-phone>
+	    <email>jpietrobelli@yahoo.com.br</email>
+	    <birthday>04/09</birthday>
+	</user>
+
+	<user id="15">
+	    <name>Luiz Fernando Santos Lima</name>
+	    <registration-number>9879</registration-number>
+	    <iniciation>09/11/2007</iniciation>
+	    <transition>27/06/2008</transition>
+	    <elevation>06/03/2009</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(47)3347-1680</home-phone>
+	    <mobile-phone>(41)8811-5052</mobile-phone>
+	    <email>santoslimamm@gmail.com</email>
+	    <birthday>02/10</birthday>
+	</user>									
+								
+
+	<user id="16">
+	    <name>Luiz Fernando Alves de Oliveira</name>
+	    <registration-number>10451</registration-number>
+	    <iniciation>26/06/2009</iniciation>
+	    <transition>30/04/2010</transition>
+	    <elevation>01/04/2011</elevation>
+	    <work-phone></work-phone>
+	    <home-phone></home-phone>
+	    <mobile-phone>(47)9947-8402</mobile-phone>
+	    <email>lfaotfa@gmail.com</email>
+	    <birthday>12/07</birthday>
+	</user>		
+									
+	<user id="17">
+	    <name>Marcelo Barroso</name>
+	    <registration-number>12940</registration-number>
+	    <iniciation>19/06/2015</iniciation>
+	    <transition></transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3227-7310</home-phone>
+	    <mobile-phone>(41)9919-3232</mobile-phone>
+	    <email>marcelobarroso-adv@hotmail.com</email>
+	    <birthday>26/06</birthday>
+	</user>	
+									
+	<user id="18">
+	    <name>Marcelo Ferreira</name>
+	    <registration-number>11401</registration-number>
+	    <iniciation>28/08/2010</iniciation>
+	    <transition>01/06/2012</transition>
+	    <elevation>07/12/2012</elevation>
+	    <work-phone></work-phone>
+	    <home-phone></home-phone>
+	    <mobile-phone>(41)9941-5000</mobile-phone>
+	    <email>mffereira@hotmail.com</email>
+	    <birthday>18/11</birthday>
+	</user>	
+									
+	<user id="19">
+	    <name>Marcello Obici</name>
+	    <registration-number>13042</registration-number>
+	    <iniciation>04/09/2015</iniciation>
+	    <transition></transition>
+	    <elevation></elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3524-8909</home-phone>
+	    <mobile-phone>(41)9916-9630</mobile-phone>
+	    <email>marcello.obici@gmail.com</email>
+	    <birthday>02/02</birthday>
+	</user>									
+
+	<user id="20">
+	    <name>Marcos Roberto de Oliveira</name>
+	    <registration-number>11725</registration-number>
+	    <iniciation>13/07/2012</iniciation>
+	    <transition>19/04/2013</transition>
+	    <elevation>06/12/2013</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3246-7699</home-phone>
+	    <mobile-phone>(41)8864-2095</mobile-phone>
+	    <email>marcos.roberto34@yahoo.com.br</email>
+	    <birthday>26/09</birthday>
+	</user>	
+
+	<user id="21">
+	    <name>Renato Alexandre Gouvea</name>
+	    <registration-number>10796</registration-number>
+	    <iniciation>21/05/2010</iniciation>
+	    <transition>26/11/2010</transition>
+	    <elevation>13/05/2011</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3128-5445</home-phone>
+	    <mobile-phone>(41)9256-6005</mobile-phone>
+	    <email>renatogouvea.1@gmail.com</email>
+	    <birthday>25/12</birthday>
+	</user>	
+										
+	<user id="21">
+	    <name>Sandro Marcio Leite Moreira da Silva</name>
+	    <registration-number>9958</registration-number>
+	    <iniciation>29/02/2008</iniciation>
+	    <transition>10/10/2008</transition>
+	    <elevation>22/05/2009</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3285-9242</home-phone>
+	    <mobile-phone>(41)9155-0660</mobile-phone>
+	    <email>samosilva@ig.com.br</email>
+	    <birthday>27/05</birthday>
+	</user>	
+								
+	<user id="22">
+	    <name>Webster Rodrigues Lima</name>
+	    <registration-number>11513</registration-number>
+	    <iniciation>04/11/2011</iniciation>
+	    <transition>27/07/2012</transition>
+	    <elevation>15/03/2013</elevation>
+	    <work-phone></work-phone>
+	    <home-phone>(41)3352-1118</home-phone>
+	    <mobile-phone>(41)8536-7264</mobile-phone>
+	    <email>wrlima07@gmail.com</email>
+	    <birthday>16/08</birthday>
+	</user>					 			 	
 </user-repository>

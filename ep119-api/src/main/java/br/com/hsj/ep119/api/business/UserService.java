@@ -30,13 +30,7 @@ public class UserService {
 		return null;
 	}
 	
-	@SuppressWarnings("rawtypes")
 	private List<User> createUsers() throws IOException, URISyntaxException {
-//		List<User> users = new ArrayList<User>();
-//		User user = (User) converter.doUnMarshaling("/user.xml");
-//		users.add(user);
-		
-	
 		UserRepository repository = (UserRepository) converter.doUnMarshaling("/user.xml");
 		
 		return repository.getUsers();
