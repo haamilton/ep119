@@ -45,19 +45,19 @@
             <bind-xml name="registration-number" node="element"/>
         </field>
 
-		<field name="birthday" type="date">
+		<field name="birthday" type="string" handler="br.com.hsj.ep119.api.handler.BirthdayHandler">
             <bind-xml name="birthday" node="element"/>
         </field>
         
-		<field name="iniciation" type="date">
+		<field name="iniciation" type="string" handler="br.com.hsj.ep119.api.handler.DateHandler">
             <bind-xml name="iniciation" node="element"/>
         </field>
         
-		<field name="transition" type="date">
+		<field name="transition" type="string" handler="br.com.hsj.ep119.api.handler.DateHandler">
             <bind-xml name="transition" node="element"/>
         </field>
         
-        <field name="elevation" type="date">
+        <field name="elevation" type="string" handler="br.com.hsj.ep119.api.handler.DateHandler">
             <bind-xml name="elevation" node="element"/>
         </field>
         
