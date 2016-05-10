@@ -25,6 +25,10 @@ public class DateHandler extends GeneralizedFieldHandler {
     }
  
     public Object convertUponSet(Object value) {
+    	if (value == null || "".equals((String) value)) {
+    		return null;
+    	}
+    	
         Date date = null;
         try {
             date = formatter.parse((String) value);

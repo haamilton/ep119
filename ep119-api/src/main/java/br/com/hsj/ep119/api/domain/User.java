@@ -2,6 +2,8 @@ package br.com.hsj.ep119.api.domain;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class User {
 
 	private Integer id;
@@ -18,12 +20,16 @@ public class User {
 	
 	private Integer registrationNumber;
 	
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM")
 	private Date birthday;
 	
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
 	private Date iniciation;
 	
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
 	private Date transition;
 	
+	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="dd/MM/yyyy")
 	private Date elevation;
 	
 	public User() {
