@@ -2,44 +2,73 @@ package br.com.hsj.ep119.api.business;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.hsj.ep119.api.converter.Converter;
 import br.com.hsj.ep119.api.domain.User;
-import br.com.hsj.ep119.api.domain.UserRepository;
+import br.com.hsj.ep119.api.repository.DataRepository;
 
+/**
+ * 
+ * Classe que mantém as regras negociais referentes a Usuários
+ *
+ * @author Hamilton dos Santos Junior
+ * @date 11 de mai de 2016
+ *
+ */
 @Service
 public class UserService {
-
-	@Autowired
-	private Converter converter;
 	
-	public List<User> find() {
-		
+	@Autowired
+	private DataRepository dataRepository;
+
+	/**
+	 * Método utilizado para buscar todos os usuários
+	 * 
+	 * @return Lista de Usuários {@link User}
+	 */
+	public List<User> findAll() {
+		List<User> users = null;
 		try {
-			return createUsers();
+			users = dataRepository.getUsers();
+			
+			if (users == null) {
+				users = Collections.emptyList();
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
 		
-		return null;
+		return users;
 	}
 	
-	private List<User> createUsers() throws IOException, URISyntaxException {
-		UserRepository repository = (UserRepository) converter.doUnMarshaling("/user.xml");
+	/**
+	 * Método utilizado para buscar um usuário pelo ID
+	 * 
+	 * @param _id Identificador do usuário
+	 * @return {@link User}
+	 */
+	public User findById(Integer _id) {
+		if (_id == null) {
+			return null;
+		}
 		
-		return repository.getUsers();
+		User user = null;
+		
+		try {
+			user = dataRepository.getUser(_id);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		} 
+		
+		return user;
 	}
-
-
-	public void setConverter(Converter converter) {
-		this.converter = converter;
-	}
-	
 	
 }
