@@ -2,11 +2,9 @@ package br.com.hsj.ep119.api.repository;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 import br.com.hsj.ep119.api.converter.Converter;
@@ -36,7 +34,7 @@ public class DataRepository {
 	 * @throws IOException Excecão gerada ao recuperar as informações de usuários do XML
 	 * @throws URISyntaxException Excecão gerada ao recuperar as informações de usuários do XML
 	 */
-	public List<User> getUsers() throws IOException, URISyntaxException {
+	public List<User> findUsers() throws IOException, URISyntaxException {
 		loadUsers();
 		
 		return users;
@@ -50,7 +48,7 @@ public class DataRepository {
 	 * @throws URISyntaxException Excecão gerada ao recuperar as informações de usuários do XML
 	 * @throws IllegalArgumentException Caso o id do usuário for null
 	 */
-	public User getUser(Integer _id) throws IOException, URISyntaxException {
+	public User findById(Integer _id) throws IOException, URISyntaxException {
 		if (_id == null) {
 			throw new IllegalArgumentException("O Id é um campo obrigatório.");
 		}
@@ -68,6 +66,33 @@ public class DataRepository {
 		return user;
 	}
 	
+	
+	/**
+	 * Métoo utilizado para buscar um {@link User} pelo email
+	 * @param _id Id do usuários consultado
+	 * @return {@link User}
+	 * @throws IOException Excecão gerada ao recuperar as informações de usuários do XML
+	 * @throws URISyntaxException Excecão gerada ao recuperar as informações de usuários do XML
+	 * @throws IllegalArgumentException Caso o id do usuário for null
+	 */
+	public User findByEmail(String _email) throws IOException, URISyntaxException {
+		if (_email == null || "".equalsIgnoreCase(_email)) {
+			throw new IllegalArgumentException("O Email é um campo obrigatório.");
+		}
+		
+		loadUsers();
+
+		User user = null;
+		
+		for (User aux : users) {
+			if (_email.equals(aux.getEmail())) {
+				user = aux;
+				break;
+			}
+		}
+		
+		return user;
+	}
 
 	private void loadUsers() throws IOException, URISyntaxException {
 		if (users == null) {

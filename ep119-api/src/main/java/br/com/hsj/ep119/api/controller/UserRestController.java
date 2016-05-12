@@ -12,9 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.hsj.ep119.api.business.UserService;
 import br.com.hsj.ep119.api.domain.User;
+import br.com.hsj.ep119.api.exception.ApplicationException;
+import br.com.hsj.ep119.api.exception.UserNotFoundException;
 
+/**
+ * 
+ * Interface de acesso aos métodos implementados para Usuários
+ *
+ * @author Hamilton dos Santos Junior
+ * @date 12 de mai de 2016
+ *
+ */
 @RestController
-public class UserRestController {
+public class UserRestController extends AbstractRestController {
 
 	@Autowired
 	private UserService userService;  
@@ -23,10 +33,11 @@ public class UserRestController {
 	
 	/**
 	 * Método utilizado para retornar todos os usuários cadastrados
-	 * @return
+	 * @return Lista de usuários {@link User}
+	 * @throws ApplicationException 
 	 */
 	@RequestMapping(value = "/user/", method = RequestMethod.GET)
-	public ResponseEntity<List<User>> listAllUsers() {
+	public ResponseEntity<List<User>> findAll() throws ApplicationException {
 		List<User> users = userService.findAll();
 		
 		if (users.isEmpty()) {
@@ -36,9 +47,16 @@ public class UserRestController {
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
-    public ResponseEntity<User> getUser(@PathVariable("id") int id) {
+	@RequestMapping(value = "/user/id/{id}", method = RequestMethod.GET)
+    public ResponseEntity<User> findById(@PathVariable("id") int id) throws UserNotFoundException, ApplicationException {
         User user = userService.findById(id);
+
+        return new ResponseEntity<User>(user, HttpStatus.OK);
+    }
+	
+	@RequestMapping(value = "/user/email/{email}", method = RequestMethod.GET)
+    public ResponseEntity<User> findByEmail(@PathVariable("email") String _email) throws UserNotFoundException, ApplicationException {
+        User user = userService.findByEmail(_email);
 
         if (user == null) {
             return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
