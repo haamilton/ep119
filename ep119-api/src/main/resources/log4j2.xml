@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="NomeDaAplicacao-log4j2">
+    <Properties>
+        <Property name="path">C:/Logs</Property>
+        <Property name="application">ep119-api</Property>
+        <Property name="tamanho_arquivo">10 MB</Property>
+        <Property name="intervalo_tempo">1</Property>
+        <Property name="pattern">%date{dd-MM-YY HH:mm:ss:SSSSS} %level %logger [thread=%t]: %message%n</Property>
+    </Properties>
+     
+    <Appenders>
+        <Console name="consoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}" />
+        </Console>
+        <Routing name="TracerAppender">
+            <Routes pattern="${ctx:logFileName}">
+                <Route>
+                    <RollingRandomAccessFile
+                        name="Rolling-${ctx:logFileName}"
+                        fileName="${path}/${application}/logs/${application}-${ctx:logFileName}.log"
+                        filePattern="${path}/${application}/logs/${application}-${ctx:logFileName}.%i.%d{yyyMMdd}.log.gz"
+                        immediateFlush="true">
+                        <PatternLayout pattern="${pattern}" />
+                        <Policies>
+                            <SizeBasedTriggeringPolicy size="${tamanho_arquivo}" />
+                            <TimeBasedTriggeringPolicy interval="${intervalo_tempo}" modulate="true" />
+                        </Policies>
+                    </RollingRandomAccessFile>
+                </Route>
+                <!-- By having this set to ${ctx:logFileName} it will match when filename 
+                    is not set in the context -->
+                <Route ref="consoleAppender" key="${ctx:logFileName}" />
+            </Routes>
+        </Routing>
+         
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="br.com.hsj.log" level="INFO" additivity="false">
+            <AppenderRef ref="TracerAppender" />
+        </AsyncLogger>
+         
+        <Root level="ALL">
+            <AppenderRef ref="TracerAppender" />
+        </Root>
+    </Loggers>
+</Configuration>
